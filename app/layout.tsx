@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "ihsanmokhsen.com",
   description: "Personal dashboard homepage for Muhammad Ihsanul Hakim Mokhsen",
   icons: {
-    icon: "/profile.png",
-    shortcut: "/profile.png",
-    apple: "/profile.png"
+    icon: "/favicon-profile.png",
+    shortcut: "/favicon-profile.png",
+    apple: "/favicon-profile.png"
   }
 };
 
