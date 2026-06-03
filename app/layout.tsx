@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+
+const jakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta-sans"
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ihsanmokhsen.com"),
@@ -49,8 +55,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="font-light">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                try {
+                  var storedTheme = localStorage.getItem('theme');
+                  var preferredTheme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                  document.documentElement.dataset.theme = preferredTheme;
+                  document.documentElement.style.colorScheme = preferredTheme;
+                } catch (error) {}
+              })();
+            `
+          }}
+        />
+      </head>
+      <body className={`${jakartaSans.variable} font-light`}>{children}</body>
     </html>
   );
 }

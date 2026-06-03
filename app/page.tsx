@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 type Lang = "id" | "en";
+type Theme = "light" | "dark";
 
 const navLinks = [
   { id: "subdomains", label: { id: "Kerjaan", en: "Work" } },
@@ -99,8 +100,23 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("subdomains");
   const [menuOpen, setMenuOpen] = useState(false);
   const [lang, setLang] = useState<Lang>("id");
+  const [theme, setTheme] = useState<Theme>("light");
 
   const t = copy[lang];
+
+  useEffect(() => {
+    const storedTheme = window.localStorage.getItem("theme") as Theme | null;
+    const preferredTheme =
+      storedTheme ??
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    setTheme(preferredTheme);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+    window.localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
@@ -150,7 +166,16 @@ export default function Home() {
           onClick={() => setLang((prev) => (prev === "en" ? "id" : "en"))}
           className="border divider bg-white px-3 py-1 text-xs uppercase tracking-[0.14em] text-[#1d1d1f] hover:text-[#f44a22]"
         >
-          {lang === "en" ? "ID" : "EN"}
+          {lang === "en" ? "EN" : "ID"}
+        </button>
+        <button
+          type="button"
+          onClick={() => setTheme((prev) => (prev === "dark" ? "light" : "dark"))}
+          className="border divider bg-white px-3 py-1 text-xs uppercase tracking-[0.14em] text-[#1d1d1f] hover:text-[#f44a22]"
+          aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+        >
+          {theme === "dark" ? "Light" : "Dark"}
         </button>
         <button
           type="button"
