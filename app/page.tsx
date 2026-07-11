@@ -46,6 +46,7 @@ const copy = {
     workingLabel: "Sedang Dikerjakan",
     workingItem:
       "Website Resmi Bapenda Provinsi NTT",
+    workingExtra: "Penjaga Server VPS Kantor",
     moreProjects: "works.ihsanmokhsen.com",
     subdomainsTitle: "Kerjaan",
     aboutTitle: "Tentang",
@@ -64,6 +65,7 @@ const copy = {
     workingLabel: "Currently Working On",
     workingItem:
       "Official Website of Bapenda NTT Province",
+    workingExtra: "Office VPS Server Keeper",
     moreProjects: "works.ihsanmokhsen.com",
     subdomainsTitle: "Work",
     aboutTitle: "About",
@@ -163,6 +165,8 @@ export default function Home() {
         <div className="flex flex-wrap gap-3 border-b divider py-1.5 text-[11px] sm:text-xs">
           <span className="text-[#86868b]">{t.workingLabel}:</span>
           <span className="text-[#1d1d1f]">{t.workingItem}</span>
+          <span className="text-[#86868b]">|</span>
+          <span className="text-[#1d1d1f]">{t.workingExtra}</span>
           <a href="https://works.ihsanmokhsen.com/" target="_blank" rel="noreferrer" className="nav-underline text-[#f44a22]">{t.moreProjects}</a>
         </div>
 
