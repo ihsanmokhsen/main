@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   authors: [{ name: PERSON_NAME, url: SITE_URL }],
   creator: PERSON_NAME,
   publisher: PERSON_NAME,
+  verification: {
+    google: "hEhZ1VhICAwe7oImt0vDWTCc3r8IChSEc04EZtKrRd8"
+  },
   alternates: {
     canonical: "/"
   },
