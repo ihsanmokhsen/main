@@ -133,11 +133,11 @@ export default function Home() {
           <div className="space-y-4">
             <p className="text-[10px] uppercase tracking-[0.2em] text-white/45">Navigasi</p>
             <ul className="space-y-1.5 text-xs text-white">
-              <li><a href="#subdomains" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.subdomainsTitle}</a></li>
-              <li><a href="#about" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.aboutTitle}</a></li>
-              <li><a href="#publications" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.publicationsTitle}</a></li>
+              <li><a href="/karya" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.subdomainsTitle}</a></li>
+              <li><a href="/tentang" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.aboutTitle}</a></li>
+              <li><a href="/publikasi" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.publicationsTitle}</a></li>
               <li><a href="#focus" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.focusTitle}</a></li>
-              <li><a href="#footer" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.contactTitle}</a></li>
+              <li><a href="/kontak" onClick={() => setMenuOpen(false)} className="nav-underline hover:text-[#f44a22]">{t.contactTitle}</a></li>
             </ul>
             <div className="border-t border-white/10 pt-3">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/45">Kontak</p>
@@ -161,6 +161,13 @@ export default function Home() {
             <p className="text-[11px] leading-snug text-[#86868b] sm:text-xs">{t.role}</p>
           </div>
         </section>
+
+        <nav aria-label="Navigasi utama" className="flex flex-wrap gap-x-5 gap-y-1 border-b divider py-1.5 text-[11px] sm:text-xs">
+          <a className="nav-underline text-[#1d1d1f] hover:text-[#f44a22]" href="/tentang">{t.aboutTitle}</a>
+          <a className="nav-underline text-[#1d1d1f] hover:text-[#f44a22]" href="/karya">{t.subdomainsTitle}</a>
+          <a className="nav-underline text-[#1d1d1f] hover:text-[#f44a22]" href="/publikasi">{t.publicationsTitle}</a>
+          <a className="nav-underline text-[#1d1d1f] hover:text-[#f44a22]" href="/kontak">{t.contactTitle}</a>
+        </nav>
 
         <div className="flex flex-wrap gap-3 border-b divider py-1.5 text-[11px] sm:text-xs">
           <span className="text-[#86868b]">{t.workingLabel}:</span>

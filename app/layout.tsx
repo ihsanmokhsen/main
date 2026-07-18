@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { NAVIGATION_JSON_LD, PERSON_JSON_LD, PERSON_NAME, SITE_DESCRIPTION, SITE_URL, WEBSITE_JSON_LD } from "@/app/_components/site-data";
+import { StructuredData } from "@/app/_components/structured-data";
 import "./globals.css";
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -8,13 +10,25 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ihsanmokhsen.com"),
+  applicationName: PERSON_NAME,
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Muhammad Ihsanul Hakim Mokhsen",
     template: "%s | ihsanmokhsen.com"
   },
-  description:
-    "ASN Pranata Komputer BPAD Provinsi NTT, penerima Beasiswa Magister Komdigi, dan peneliti ketahanan siber berpusat pada manusia, security awareness, serta pengembangan web berbasis AI.",
+  description: SITE_DESCRIPTION,
+  keywords: [
+    PERSON_NAME,
+    "Ihsan Mokhsen",
+    "alhakimi",
+    "Pranata Komputer BPAD NTT",
+    "Digital Forensics",
+    "Information Security Awareness",
+    "HAIS-Q"
+  ],
+  authors: [{ name: PERSON_NAME, url: SITE_URL }],
+  creator: PERSON_NAME,
+  publisher: PERSON_NAME,
   alternates: {
     canonical: "/"
   },
@@ -46,6 +60,17 @@ export const metadata: Metadata = {
     description:
       "Government IT practitioner and graduate researcher in human-centered cyber resilience, security awareness, and AI-powered web development.",
     images: ["/profile.png"]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
   }
 };
 
@@ -55,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -72,7 +97,15 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${jakartaSans.variable} font-light`}>{children}</body>
+      <body className={`${jakartaSans.variable} font-light`}>
+        <StructuredData
+          data={{
+            "@context": "https://schema.org",
+            "@graph": [PERSON_JSON_LD, WEBSITE_JSON_LD, NAVIGATION_JSON_LD]
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
