@@ -29,18 +29,18 @@ export default function KontakPage() {
         intro="Terbuka untuk diskusi dan kolaborasi pada keamanan informasi, digital forensics, riset pemerintahan, AI, dan pengembangan produk digital."
         title="Mari membangun sesuatu yang berguna."
       >
-        <address className="not-italic divide-y divider border-y divider">
+        <address className="not-italic divide-y divider">
           {contacts.map((contact) => (
             <a
-              className="group grid gap-2 py-6 sm:grid-cols-[0.3fr_1fr_auto] sm:items-center sm:gap-8"
+              className="group grid gap-1 py-1.5 sm:grid-cols-[0.22fr_1fr_auto] sm:items-center sm:gap-5"
               href={contact.href}
               key={contact.label}
               rel={contact.href.startsWith("http") ? "noreferrer" : undefined}
               target={contact.href.startsWith("http") ? "_blank" : undefined}
             >
               <span className="text-[10px] uppercase tracking-[0.18em] text-[#86868b]">{contact.label}</span>
-              <span className="text-[16px] text-[#1d1d1f] group-hover:text-[#f44a22]">{contact.value}</span>
-              <span aria-hidden="true" className="text-[#86868b] group-hover:text-[#f44a22]">↗</span>
+              <span className="text-xs text-[#1d1d1f] group-hover:text-[#f44a22] sm:text-sm">{contact.value}</span>
+              <span aria-hidden="true" className="text-xs text-[#86868b] group-hover:text-[#f44a22]">↗</span>
             </a>
           ))}
         </address>

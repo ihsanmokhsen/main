@@ -34,9 +34,9 @@ export default function TentangPage() {
         intro="Praktisi TI pemerintahan dan peneliti yang menerjemahkan keamanan informasi menjadi riset, alat, dan alur kerja yang dapat dipahami serta diukur."
         title="Teknologi publik yang praktis dan berpusat pada manusia."
       >
-        <div className="grid gap-10 lg:grid-cols-[0.38fr_1fr] lg:gap-16">
+        <div className="grid gap-1 sm:grid-cols-[0.22fr_1fr] sm:gap-5">
           <p className="text-[11px] uppercase tracking-[0.18em] text-[#86868b]">Profil</p>
-          <div className="max-w-3xl space-y-6 text-[16px] leading-8 text-[#1d1d1f]">
+          <div className="max-w-3xl space-y-2 text-xs leading-snug text-[#1d1d1f] sm:text-sm">
             <p>
               Muhammad Ihsanul Hakim Mokhsen, S.Kom., M.S.F adalah ASN Pranata Komputer di BPAD Provinsi Nusa
               Tenggara Timur dan penerima Beasiswa Magister Komdigi.
