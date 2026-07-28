@@ -13,40 +13,42 @@ type SubpageShellProps = {
 
 export function SubpageShell({ active, eyebrow, title, intro, children }: SubpageShellProps) {
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-[1180px] flex-col px-6 py-6 sm:px-8 sm:py-8">
-      <header className="flex flex-col gap-5 border-b divider pb-5 sm:flex-row sm:items-center sm:justify-between">
-        <Link className="text-[15px] font-medium tracking-tight text-[#1d1d1f]" href="/">
-          Muhammad Ihsanul Hakim Mokhsen
-        </Link>
-        <nav aria-label="Navigasi utama" className="flex flex-wrap gap-x-5 gap-y-2">
-          {PRIMARY_PAGES.map((page) => (
-            <Link
-              className={`nav-underline text-[12px] text-[#86868b] hover:text-[#f44a22] ${active === page.href ? "is-active text-[#1d1d1f]" : ""}`}
-              href={page.href}
-              key={page.href}
-            >
-              {page.label}
-            </Link>
-          ))}
-        </nav>
-      </header>
+    <main className="mx-auto flex min-h-screen w-full max-w-[1180px] flex-col px-6 py-3 sm:px-8">
+      <div className="flex flex-1 flex-col justify-center gap-1">
+        <header className="flex flex-col gap-2 border-b divider pb-2 sm:flex-row sm:items-center sm:justify-between">
+          <Link className="text-sm tracking-tight text-[#1d1d1f] sm:text-base" href="/">
+            Muhammad Ihsanul Hakim Mokhsen
+          </Link>
+          <nav aria-label="Navigasi utama" className="flex flex-wrap gap-x-5 gap-y-1">
+            {PRIMARY_PAGES.map((page) => (
+              <Link
+                className={`nav-underline text-[11px] text-[#86868b] hover:text-[#f44a22] sm:text-xs ${active === page.href ? "is-active text-[#1d1d1f]" : ""}`}
+                href={page.href}
+                key={page.href}
+              >
+                {page.label}
+              </Link>
+            ))}
+          </nav>
+        </header>
 
-      <section className="border-b divider py-12 sm:py-16">
-        <p className="text-[10px] uppercase tracking-[0.2em] text-[#f44a22]">{eyebrow}</p>
-        <h1 className="mt-4 max-w-4xl text-[clamp(2.6rem,7vw,6rem)] font-light leading-[0.95] tracking-tight text-[#1d1d1f]">
-          {title}
-        </h1>
-        <p className="mt-7 max-w-3xl text-[16px] leading-8 text-[#86868b] sm:text-[19px]">{intro}</p>
-      </section>
+        <section className="border-b divider py-1.5">
+          <p className="text-[10px] uppercase tracking-[0.2em] text-[#f44a22]">{eyebrow}</p>
+          <h1 className="mt-1 max-w-4xl text-base leading-snug tracking-tight text-[#1d1d1f] sm:text-lg">
+            {title}
+          </h1>
+          <p className="mt-1 max-w-3xl text-[11px] leading-snug text-[#86868b] sm:text-xs">{intro}</p>
+        </section>
 
-      <div className="flex-1 py-10 sm:py-14">{children}</div>
+        <div className="border-b divider py-1.5">{children}</div>
 
-      <footer className="flex flex-col gap-3 border-t divider py-5 text-[11px] text-[#86868b] sm:flex-row sm:items-center sm:justify-between">
-        <span>ihsanmokhsen.com</span>
-        <Link className="nav-underline hover:text-[#f44a22]" href="/">
-          Kembali ke beranda
-        </Link>
-      </footer>
+        <footer className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-1.5 text-[10px] text-[#86868b] sm:text-[11px]">
+          <span>ihsanmokhsen.com</span>
+          <Link className="nav-underline hover:text-[#f44a22]" href="/">
+            Kembali ke beranda
+          </Link>
+        </footer>
+      </div>
     </main>
   );
 }

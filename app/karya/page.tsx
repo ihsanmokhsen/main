@@ -44,20 +44,20 @@ export default function KaryaPage() {
         intro="Pilihan pekerjaan yang menghubungkan kebutuhan pemerintahan, riset keamanan informasi, dan pengembangan produk digital."
         title="Aplikasi, riset, dan eksperimen digital."
       >
-        <div className="divide-y divider border-y divider">
+        <div className="divide-y divider">
           {projects.map((project) => (
             <a
-              className="group grid gap-3 py-7 sm:grid-cols-[0.35fr_1fr_auto] sm:items-center sm:gap-8"
+              className="group grid gap-1 py-1.5 sm:grid-cols-[0.25fr_1fr_auto] sm:items-center sm:gap-5"
               href={project.href}
               key={project.title}
               rel="noreferrer"
               target="_blank"
             >
-              <h2 className="text-[24px] font-light tracking-tight text-[#1d1d1f] group-hover:text-[#f44a22]">
+              <h2 className="text-xs tracking-tight text-[#1d1d1f] group-hover:text-[#f44a22] sm:text-sm">
                 {project.title}
               </h2>
-              <p className="text-[14px] leading-7 text-[#86868b]">{project.description}</p>
-              <span aria-hidden="true" className="text-[18px] text-[#86868b] group-hover:text-[#f44a22]">↗</span>
+              <p className="text-[10px] leading-snug text-[#86868b] sm:text-[11px]">{project.description}</p>
+              <span aria-hidden="true" className="text-xs text-[#86868b] group-hover:text-[#f44a22]">↗</span>
             </a>
           ))}
         </div>

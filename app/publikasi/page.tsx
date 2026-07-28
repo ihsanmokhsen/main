@@ -41,14 +41,14 @@ export default function PublikasiPage() {
         intro="Riset yang berfokus pada pengukuran kesadaran keamanan informasi dan peningkatan perilaku keamanan di institusi pemerintahan Indonesia."
         title="Riset keamanan informasi yang dapat diukur."
       >
-        <article className="max-w-4xl border-y divider py-8">
+        <article className="max-w-4xl">
           <p className="text-[10px] uppercase tracking-[0.18em] text-[#86868b]">IEEE ICoCICs 2025</p>
-          <h2 className="mt-4 text-[clamp(1.8rem,4vw,3.4rem)] font-light leading-tight tracking-tight text-[#1d1d1f]">
+          <h2 className="mt-1 text-xs leading-snug tracking-tight text-[#1d1d1f] sm:text-sm">
             {title}
           </h2>
-          <p className="mt-5 text-[14px] leading-7 text-[#86868b]">M. I. H. Mokhsen dan Rio Guntur Utomo</p>
+          <p className="mt-1 text-[10px] leading-snug text-[#86868b] sm:text-[11px]">M. I. H. Mokhsen dan Rio Guntur Utomo</p>
           <a
-            className="nav-underline mt-6 text-[13px] text-[#f44a22]"
+            className="nav-underline mt-1 text-[10px] text-[#f44a22] sm:text-[11px]"
             href="https://doi.org/10.1109/ICoCICs68032.2025.11383985"
             rel="noreferrer"
             target="_blank"
