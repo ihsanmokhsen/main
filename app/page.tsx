@@ -45,7 +45,7 @@ const copy = {
       "ASN Pranata Komputer BPAD NTT | Penerima Beasiswa Magister Komdigi | Fokus pada ketahanan siber, kesadaran keamanan, dan web berbasis AI.",
     workingLabel: "Sedang Dikerjakan",
     workingItem:
-      "Website Resmi Bapenda Provinsi NTT",
+      "Profil Aset NTT",
     workingExtra: "Penjaga Server VPS Kantor",
     moreProjects: "works.ihsanmokhsen.com",
     subdomainsTitle: "Kerjaan",
