@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { PageMascot } from "@/app/_components/mascot";
 
 type Lang = "id" | "en";
 type Theme = "light" | "dark";
@@ -45,7 +46,7 @@ const copy = {
       "ASN Pranata Komputer BPAD NTT | Penerima Beasiswa Magister Komdigi | Fokus pada ketahanan siber, kesadaran keamanan, dan web berbasis AI.",
     workingLabel: "Sedang Dikerjakan",
     workingItem:
-      "Website Resmi Bapenda Provinsi NTT",
+      "Profil Aset NTT",
     workingExtra: "Penjaga Server VPS Kantor",
     moreProjects: "works.ihsanmokhsen.com",
     subdomainsTitle: "Kerjaan",
@@ -84,8 +85,17 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [lang, setLang] = useState<Lang>("id");
   const [theme, setTheme] = useState<Theme>("light");
+  const [mascotSize, setMascotSize] = useState(128);
 
   const t = copy[lang];
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 639px)");
+    const update = () => setMascotSize(mq.matches ? 72 : 128);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     const storedTheme = window.localStorage.getItem("theme") as Theme | null;
@@ -152,13 +162,16 @@ export default function Home() {
       )}
 
       <div className="flex flex-1 flex-col justify-center gap-1">
-        <section className="flex items-center gap-3 border-b divider pb-2">
-          <img src="/profile.png" alt="" className="h-10 w-10 shrink-0 rounded-full object-cover grayscale sm:h-12 sm:w-12" />
-          <div className="min-w-0">
+        <section className="relative flex items-center gap-3 border-b divider pb-2">
+          <img src="/foto-baru.png" alt="Foto Muhammad Ihsanul Hakim Mokhsen" className="h-20 w-[60px] shrink-0 rounded-md object-cover object-top sm:h-24 sm:w-[72px]" />
+          <div className="min-w-0 pr-20 sm:pr-36">
             <h1 className="truncate text-base tracking-tight text-[#1d1d1f] sm:text-lg">
               Muhammad Ihsanul Hakim Mokhsen S.Kom., M.S.F
             </h1>
             <p className="text-[11px] leading-snug text-[#86868b] sm:text-xs">{t.role}</p>
+          </div>
+          <div className="absolute right-3 top-2 z-10 block sm:right-6 sm:top-4">
+            <PageMascot size={mascotSize} />
           </div>
         </section>
 
