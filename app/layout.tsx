@@ -21,10 +21,16 @@ export const metadata: Metadata = {
     PERSON_NAME,
     "Ihsan Mokhsen",
     "alhakimi",
+    "Muhammad Ihsanul Hakim Mokhsen S.Kom",
     "Pranata Komputer BPAD NTT",
+    "Government IT Practitioner",
+    "Cybersecurity Researcher",
     "Digital Forensics",
     "Information Security Awareness",
-    "HAIS-Q"
+    "HAIS-Q",
+    "Laravel Developer Kupang",
+    "Web Pemerintahan NTT",
+    "AI dan Perlindungan Data"
   ],
   authors: [{ name: PERSON_NAME, url: SITE_URL }],
   creator: PERSON_NAME,
@@ -41,16 +47,16 @@ export const metadata: Metadata = {
     apple: "/favicon-profile.png"
   },
   openGraph: {
-    title: "Muhammad Ihsanul Hakim Mokhsen",
+    title: "Muhammad Ihsanul Hakim Mokhsen, S.Kom.",
     description:
-      "Personal site of Muhammad Ihsanul Hakim Mokhsen: government IT, human-centered cyber resilience, security awareness, and AI-powered web development.",
+      "Government IT Practitioner di BPAD Provinsi NTT dan peneliti Cybersecurity & Digital Forensics. Pembangun sistem web pemerintahan, pengelola VPS, dan peneliti HAIS-Q.",
     url: "https://ihsanmokhsen.com",
     siteName: "ihsanmokhsen.com",
     images: [
       {
-        url: "/profile.png",
-        width: 1086,
-        height: 1448,
+        url: "/foto-baru.png",
+        width: 1087,
+        height: 1447,
         alt: "Muhammad Ihsanul Hakim Mokhsen"
       }
     ],
@@ -59,10 +65,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Ihsanul Hakim Mokhsen",
+    title: "Muhammad Ihsanul Hakim Mokhsen, S.Kom.",
     description:
-      "Government IT practitioner and graduate researcher in human-centered cyber resilience, security awareness, and AI-powered web development.",
-    images: ["/profile.png"]
+      "Government IT Practitioner di BPAD Provinsi NTT dan peneliti Cybersecurity & Digital Forensics. Pembangun sistem web pemerintahan dan pengelola VPS.",
+    images: ["/foto-baru.png"]
   },
   robots: {
     index: true,
