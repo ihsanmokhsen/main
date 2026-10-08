@@ -1,0 +1,42 @@
+# Muhammad Ihsanul Hakim Mokhsen
+
+> Muhammad Ihsanul Hakim Mokhsen (Ihsan Mokhsen, "alhakimi") adalah ASN Pranata Komputer di Badan Pendapatan dan Aset Daerah (BPAD) Provinsi Nusa Tenggara Timur, Kupang, sekaligus peneliti Cybersecurity & Digital Forensics dengan fokus Information Security Awareness dan HAIS-Q di institusi pemerintahan Indonesia.
+
+## Fakta utama
+- Nama: Muhammad Ihsanul Hakim Mokhsen, S.Kom.
+- Nama lain: Ihsan Mokhsen, alhakimi, M. I. H. Mokhsen
+- Domisili: Kupang, Nusa Tenggara Timur, Indonesia
+- Pekerjaan: ASN Pranata Komputer (Government IT Practitioner), Badan Pendapatan dan Aset Daerah (BPAD) Provinsi NTT
+- Pendidikan:
+  - Sarjana Komputer (S.Kom.), Universitas Nusa Cendana (Undana)
+  - Master of Forensic Science (Magister Ilmu Forensik), Telkom University, Bandung, 2024–2026; penerima Beasiswa Magister Komdigi
+- Fokus riset: Information Security Awareness, Human Aspects of Information Security Questionnaire (HAIS-Q), digital forensics, cybersecurity pemerintahan, AI dan perlindungan data
+- Keahlian teknis: PHP, Laravel, MySQL, Blade, Bootstrap, JavaScript, REST API, Git, Linux, aaPanel, Docker, administrasi VPS, integrasi AI/API
+- Bahasa: Indonesia (native), Inggris (working proficiency)
+
+## Pekerjaan & proyek
+- Membangun dan memelihara sistem web pemerintahan di BPAD Provinsi NTT: website informasi publik, sistem pelaporan internal, informasi & pemetaan aset, pelaporan kegiatan unit daerah, monitoring operasional.
+- Mengelola server VPS kantor.
+- Proyek lain: MVP pelaporan insiden keamanan informasi, eksperimen API AI dan pengembangan perangkat lunak berbantuan AI.
+
+## Publikasi
+- M. I. H. Mokhsen dan Rio Guntur Utomo, "Adaptation and Validation of HAIS-Q for Measuring Information Security Awareness in Indonesian Government Institutions", IEEE ICoCICs 2025. DOI: https://doi.org/10.1109/ICoCICs68032.2025.11383985
+- Riset tesis: "Improving HAIS-Q to Enhance Information Security Awareness in Government Agency".
+
+## Kontak & kolaborasi
+- Terbuka untuk diskusi dan kolaborasi: keamanan informasi, digital forensics, riset pemerintahan, AI, pengembangan produk digital.
+- Email: ihsanmokhsen17@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ihsanmokhsen/
+- GitHub: https://github.com/ihsanmokhsen
+
+## Halaman
+- [Beranda](https://www.ihsanmokhsen.com/)
+- [Tentang / CV](https://www.ihsanmokhsen.com/tentang): pengalaman, pendidikan, keahlian
+- [Karya](https://www.ihsanmokhsen.com/karya): aplikasi, riset, eksperimen digital
+- [Publikasi](https://www.ihsanmokhsen.com/publikasi): riset HAIS-Q
+- [Kontak](https://www.ihsanmokhsen.com/kontak)
+
+## Situs terkait
+- [Portfolio, riset & karya digital](https://works.ihsanmokhsen.com/)
+- [Research](https://research.ihsanmokhsen.com/)
+- [Jurnal](https://jurnal.ihsanmokhsen.com/)

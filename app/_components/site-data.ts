@@ -74,7 +74,8 @@ export const PERSON_JSON_LD = {
     "@type": "Occupation",
     name: "Pranata Komputer",
     occupationLocation: {
-      "@type": "Place",
+      "@type": "City",
+      name: "Kupang",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Kupang",

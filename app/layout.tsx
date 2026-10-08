@@ -39,7 +39,10 @@ export const metadata: Metadata = {
     google: "hEhZ1VhICAwe7oImt0vDWTCc3r8IChSEc04EZtKrRd8"
   },
   alternates: {
-    canonical: "/"
+    canonical: "/",
+    types: {
+      "text/markdown": "/llms.txt"
+    }
   },
   icons: {
     icon: "/favicon-profile.png",
@@ -50,7 +53,7 @@ export const metadata: Metadata = {
     title: "Muhammad Ihsanul Hakim Mokhsen, S.Kom.",
     description:
       "Government IT Practitioner di BPAD Provinsi NTT dan peneliti Cybersecurity & Digital Forensics. Pembangun sistem web pemerintahan, pengelola VPS, dan peneliti HAIS-Q.",
-    url: "https://ihsanmokhsen.com",
+    url: SITE_URL,
     siteName: "ihsanmokhsen.com",
     images: [
       {
