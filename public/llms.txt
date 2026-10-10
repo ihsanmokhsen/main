@@ -9,7 +9,7 @@
 - Pekerjaan: ASN Pranata Komputer (Government IT Practitioner), Badan Pendapatan dan Aset Daerah (BPAD) Provinsi NTT
 - Pendidikan:
   - Sarjana Komputer (S.Kom.), Universitas Nusa Cendana (Undana)
-  - Master of Forensic Science (Magister Ilmu Forensik), Telkom University, Bandung, 2024–2026; penerima Beasiswa Magister Komdigi
+  - Master of Forensic Science (Magister Ilmu Forensik), Telkom University, Bandung, 2024–2026; awardee Beasiswa Magister Komdigi
 - Fokus riset: Information Security Awareness, Human Aspects of Information Security Questionnaire (HAIS-Q), digital forensics, cybersecurity pemerintahan, AI dan perlindungan data
 - Keahlian teknis: PHP, Laravel, MySQL, Blade, Bootstrap, JavaScript, REST API, Git, Linux, aaPanel, Docker, administrasi VPS, integrasi AI/API
 - Bahasa: Indonesia (native), Inggris (working proficiency)
