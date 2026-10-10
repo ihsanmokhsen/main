@@ -10,6 +10,40 @@ export const PRIMARY_PAGES = [
   { href: "/kontak", label: "Kontak" }
 ] as const;
 
+export const PROJECTS = [
+  {
+    title: "Works",
+    description: "Aplikasi pemerintahan, produk digital, prototipe, dan proyek pribadi.",
+    descriptionEn: "Government apps, digital products, prototypes, and personal projects.",
+    href: "https://works.ihsanmokhsen.com/"
+  },
+  {
+    title: "Stories",
+    description: "Catatan, refleksi, proses kreatif, dan dokumentasi pekerjaan.",
+    descriptionEn: "Notes, reflections, creative process, and work documentation.",
+    href: "https://works.ihsanmokhsen.com/journal"
+  },
+  {
+    title: "Research",
+    description: "Riset Digital Forensics, Information Security Awareness, dan HAIS-Q.",
+    descriptionEn: "Research on Digital Forensics, Information Security Awareness, and HAIS-Q.",
+    href: "https://research.ihsanmokhsen.com/"
+  },
+  {
+    title: "GitHub",
+    description: "Repositori kode dan eksperimen pengembangan perangkat lunak.",
+    descriptionEn: "Code repositories and software development experiments.",
+    href: "https://github.com/ihsanmokhsen"
+  }
+] as const;
+
+export const CONTACTS = [
+  { label: "Email", value: "ihsanmokhsen17@gmail.com", href: "mailto:ihsanmokhsen17@gmail.com" },
+  { label: "LinkedIn", value: "linkedin.com/in/ihsanmokhsen", href: "https://www.linkedin.com/in/ihsanmokhsen/" },
+  { label: "GitHub", value: "github.com/ihsanmokhsen", href: "https://github.com/ihsanmokhsen" },
+  { label: "Instagram", value: "@rex.orange777", href: "https://www.instagram.com/rex.orange777/" }
+] as const;
+
 export const PERSON_JSON_LD = {
   "@type": "Person",
   "@id": `${SITE_URL}/#person`,

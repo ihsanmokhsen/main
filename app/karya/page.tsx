@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { breadcrumbJsonLd } from "@/app/_components/site-data";
+import { breadcrumbJsonLd, PROJECTS } from "@/app/_components/site-data";
 import { StructuredData } from "@/app/_components/structured-data";
 import { SubpageShell } from "@/app/_components/subpage-shell";
 
@@ -10,29 +10,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/karya" },
   openGraph: { title: "Karya & Proyek Ihsan Mokhsen", url: "/karya", type: "website" }
 };
-
-const projects = [
-  {
-    title: "Works",
-    description: "Aplikasi pemerintahan, produk digital, prototipe, dan proyek pribadi.",
-    href: "https://works.ihsanmokhsen.com/"
-  },
-  {
-    title: "Stories",
-    description: "Catatan, refleksi, proses kreatif, dan dokumentasi pekerjaan.",
-    href: "https://works.ihsanmokhsen.com/journal"
-  },
-  {
-    title: "Research",
-    description: "Riset Digital Forensics, Information Security Awareness, dan HAIS-Q.",
-    href: "https://research.ihsanmokhsen.com/"
-  },
-  {
-    title: "GitHub",
-    description: "Repositori kode dan eksperimen pengembangan perangkat lunak.",
-    href: "https://github.com/ihsanmokhsen"
-  }
-] as const;
 
 export default function KaryaPage() {
   return (
@@ -45,7 +22,7 @@ export default function KaryaPage() {
         title="Aplikasi, riset, dan eksperimen digital."
       >
         <div className="divide-y divider">
-          {projects.map((project) => (
+          {PROJECTS.map((project) => (
             <a
               className="group grid gap-1 py-1.5 sm:grid-cols-[0.25fr_1fr_auto] sm:items-center sm:gap-5"
               href={project.href}

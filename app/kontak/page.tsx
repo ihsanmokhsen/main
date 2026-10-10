@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { breadcrumbJsonLd } from "@/app/_components/site-data";
+import { breadcrumbJsonLd, CONTACTS } from "@/app/_components/site-data";
 import { StructuredData } from "@/app/_components/structured-data";
 import { SubpageShell } from "@/app/_components/subpage-shell";
 
@@ -11,13 +11,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/kontak" },
   openGraph: { title: "Kontak Ihsan Mokhsen", url: "/kontak", type: "website" }
 };
-
-const contacts = [
-  { label: "Email", value: "ihsanmokhsen17@gmail.com", href: "mailto:ihsanmokhsen17@gmail.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/ihsanmokhsen", href: "https://www.linkedin.com/in/ihsanmokhsen/" },
-  { label: "GitHub", value: "github.com/ihsanmokhsen", href: "https://github.com/ihsanmokhsen" },
-  { label: "Instagram", value: "@rex.orange777", href: "https://www.instagram.com/rex.orange777/" }
-] as const;
 
 export default function KontakPage() {
   return (
@@ -30,7 +23,7 @@ export default function KontakPage() {
         title="Mari membangun sesuatu yang berguna."
       >
         <address className="not-italic divide-y divider">
-          {contacts.map((contact) => (
+          {CONTACTS.map((contact) => (
             <a
               className="group grid gap-1 py-1.5 sm:grid-cols-[0.22fr_1fr_auto] sm:items-center sm:gap-5"
               href={contact.href}

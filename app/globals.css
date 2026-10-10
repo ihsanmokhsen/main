@@ -345,3 +345,49 @@ html[data-theme="dark"] .text-sky-800 {
     animation: none;
   }
 }
+
+/* ---------- Zoom journey (beranda) ---------- */
+/* 100svh resting view + 150svh of scroll for each of the four dives. */
+.zj {
+  position: relative;
+  height: 700svh;
+}
+
+.zj-stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.zj-scene {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50% 50%;
+}
+
+/* Before the script runs, show only the first scene. */
+.zj-scene:not(:first-child) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zj {
+    height: auto;
+  }
+
+  .zj-stage {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+
+  .zj-scene,
+  .zj-scene:not(:first-child) {
+    position: relative;
+    min-height: 100svh;
+    opacity: 1;
+    visibility: visible;
+  }
+}
