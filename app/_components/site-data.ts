@@ -14,25 +14,21 @@ export const PROJECTS = [
   {
     title: "Works",
     description: "Aplikasi pemerintahan, produk digital, prototipe, dan proyek pribadi.",
-    descriptionEn: "Government apps, digital products, prototypes, and personal projects.",
     href: "https://works.ihsanmokhsen.com/"
   },
   {
     title: "Stories",
     description: "Catatan, refleksi, proses kreatif, dan dokumentasi pekerjaan.",
-    descriptionEn: "Notes, reflections, creative process, and work documentation.",
     href: "https://works.ihsanmokhsen.com/journal"
   },
   {
     title: "Research",
     description: "Riset Digital Forensics, Information Security Awareness, dan HAIS-Q.",
-    descriptionEn: "Research on Digital Forensics, Information Security Awareness, and HAIS-Q.",
     href: "https://research.ihsanmokhsen.com/"
   },
   {
     title: "GitHub",
     description: "Repositori kode dan eksperimen pengembangan perangkat lunak.",
-    descriptionEn: "Code repositories and software development experiments.",
     href: "https://github.com/ihsanmokhsen"
   }
 ] as const;
