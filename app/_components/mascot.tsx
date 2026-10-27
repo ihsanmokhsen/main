@@ -182,8 +182,8 @@ export function PageMascot({
       )}
       <Mascot
         className="mascot-float"
-        directions="/mascots/ihsan-directions.png"
-        reactions="/mascots/ihsan-reactions.png"
+        directions="/mascots/ihsan-directions.webp"
+        reactions="/mascots/ihsan-reactions.webp"
         size={size}
         label="mascot Ihsan"
       />
